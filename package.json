@@ -5,8 +5,11 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
+  "homepage": "https://toxich-johann.github.io/vue-form-demo/",
   "dependencies": {
     "core-js": "^2.6.5",
     "vue": "^2.6.6",
@@ -19,6 +22,7 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
+    "gh-pages": "^2.0.1",
     "vue-template-compiler": "^2.5.21"
   },
   "eslintConfig": {
